@@ -48,16 +48,12 @@ const comp=compare(20);
 console.log(comp(10));
 
 //function 4
-function userdata(a,b){
-    a="";
-    b="";
-    return function(c){
-        if (c="hy") {
-            return "Barev, "
-        } else if (c="en") {
-            return "Hello, "
-        } else if (c="ru") {
-            return "Privet, "
+function userdata(uname,usurname){
+    return function(lang){
+        switch(lang){
+            case 'hy': return `Barev, ${uname} ${usurname}`;
+            case 'en': return `Hello, ${uname} ${usurname}`;
+            case 'ru': return `Privet, ${uname} ${usurname}`;
         };
     };
 };

@@ -46,3 +46,23 @@ function compare(a){
 
 const comp=compare(20);
 console.log(comp(10));
+
+//function 4
+function userdata(a,b){
+    a="";
+    b="";
+    return function(c){
+        if (c="hy") {
+            return "Barev, "
+        } else if (c="en") {
+            return "Hello, "
+        } else if (c="ru") {
+            return "Privet, "
+        };
+    };
+};
+
+const SayHello=userdata("John","Johnyan");
+console.log(SayHello("hy"));
+console.log(SayHello("en"));
+console.log(SayHello("ru"));

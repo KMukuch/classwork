@@ -75,3 +75,18 @@ function printNums(a,b){
 };
 
 printNums(1,10);
+
+//function 6
+const compare2=(a)=>
+function myfunc6(b){
+        if (a>b){
+            return true;
+        } else if (a<b){
+            return false;
+        } else {
+            return null;
+        };
+};
+
+let comp2=compare2(20);
+console.log(comp2(10));

@@ -62,3 +62,16 @@ const SayHello=userdata("John","Johnyan");
 console.log(SayHello("hy"));
 console.log(SayHello("en"));
 console.log(SayHello("ru"));
+
+//function 5
+function printNums(a,b){
+    a++;
+    if (a%2==0){
+        console.log(a);
+    };
+    if (a<=b){
+        printNums(a,b);
+};
+};
+
+printNums(1,10);

@@ -16,7 +16,7 @@ function myfunc(a,b){
 console.log(myfunc(2,4));
 
 //function 2
-function comp(a,b){
+function myfunc2(a,b){
     a=Number(a);
     b=Number(b);
     if (isNaN(a)||isNaN(b)){
@@ -25,8 +25,24 @@ function comp(a,b){
     if (a>b){
         return "True";
     } else {
-        return "null";
+        return "False";
+    }
+};
+
+console.log(myfunc2(2,4));
+
+//function 3
+function compare(a){
+    return function myfunc3(b){
+        if (a>b){
+            return true;
+        } else if (a<b){
+            return false;
+        } else {
+            return null;
+        };
     };
 };
 
-console.log(comp(4,2));
+const comp=compare(20);
+console.log(comp(10));

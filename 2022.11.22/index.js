@@ -32,7 +32,19 @@ const car2={
 };
 for (let i in car1){
     console.log(i,car1[i]);
-}
+};
+
 for (let i in car2){
     console.log(i,car2[i]);
 }
+//2
+car1.show=function show(){
+    console.log(`${this.brand}: ${this.price}`)
+};
+
+car2.carshow=function carshow(){
+    console.log(`${this.brand}: ${this.price}`)
+}
+
+car1.show();
+car2.carshow();

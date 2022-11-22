@@ -30,4 +30,9 @@ const car2={
     year:2018,
     price:20000,
 };
-console.log(car1,car2);
+for (let i in car1){
+    console.log(i,car1[i]);
+}
+for (let i in car2){
+    console.log(i,car2[i]);
+}
